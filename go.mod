@@ -1,4 +1,4 @@
-module github.com/danil/structcacheexample
+module github.com/danil/rocacheexample
 
 go 1.17
 

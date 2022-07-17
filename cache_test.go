@@ -2,14 +2,14 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-package structcacheexample_test
+package rocacheexample_test
 
 import (
 	"fmt"
 	"sync"
 	"testing"
 
-	"github.com/danil/structcacheexample"
+	"github.com/danil/rocacheexample"
 )
 
 func BenchmarkCache(b *testing.B) {
@@ -23,13 +23,13 @@ func BenchmarkCache(b *testing.B) {
 }
 
 func test() {
-	foo := structcacheexample.New()
+	foo := rocacheexample.New()
 	defer foo.Close()
 
-	bar := structcacheexample.New()
+	bar := rocacheexample.New()
 	defer bar.Close()
 
-	xyz := structcacheexample.New()
+	xyz := rocacheexample.New()
 	defer xyz.Close()
 
 	var wg sync.WaitGroup
